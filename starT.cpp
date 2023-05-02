@@ -14,7 +14,17 @@ void runTests(void);
 string starT(int width, int height)
 {
   string result = "";
-  result = "stub"; // TODO: remove this line, replace with correct code
+  for (int i = 0; i < width - 1; i ++) {
+    result += "* ";
+  }
+  result += "*\n";
+  
+  for (i = 0; i < height - 1; i++) {
+    for (int j = 0; j < width / 2; j++) {
+      result += " ";
+    }
+    result += "*\n";
+  }
   return result;
 }
 
